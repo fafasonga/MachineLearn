@@ -93,9 +93,6 @@ class FindS:
 
         return hypothesis
 
-    def predict():
-        raise NotImplemented
-
 
 X, Y = load_data("mushrooms.csv")
 

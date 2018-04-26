@@ -37,8 +37,8 @@ def load_data(path_to_csv, has_header=True):
         data = read_csv(path_to_csv, header='infer')
     else:
         data = read_csv(path_to_csv, header=None)
-    X = data.loc[:, data.columns[:-1] ]
-    Y = data.loc[:, data.columns[-1]  ]
+    X = data.loc[:, data.columns[:-1]]
+    Y = data.loc[:, data.columns[-1]]
     return X, Y.as_matrix()
 
 
